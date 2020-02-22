@@ -29,8 +29,8 @@ export const AuthPage = (props) => {
 
   const registerHandler = async () => {
     try {
-      const data = await request('/users/signup', 'POST', {...form})
-      message(data.message)
+      // const data = await request('/users/signup', 'POST', {...form})
+      // message(data.message)
       history.push("/register")
     } catch (e) {
     }

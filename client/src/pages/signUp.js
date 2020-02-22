@@ -41,8 +41,8 @@ export const SingUpPage = (props) => {
 
     const loginHandler = async () => {
         try {
-            const data = await request('/users/login', 'POST', {...form})
-            auth.login(data.token, data.userId)
+            //
+            history.push('/')
         } catch (e) {
         }
     }
@@ -50,10 +50,9 @@ export const SingUpPage = (props) => {
     return (
         <div className="row">
             <div className=" col s6 offset-s3">
-                <h1>BLBLBLBLBBL</h1>
+                <h1>Sign Up</h1>
                 <div className="card blue darken-1">
                     <div className="card-content white-text">
-                        <span className="card-title">Authorization</span>
                         <div>
 
                             <div className="input-field">

@@ -3,7 +3,6 @@ import {useParams} from 'react-router-dom'
 import {useHttp} from '../hooks/http.hook';
 import {AuthContext} from '../context/AuthContext'
 import {Loader} from '../components/Loader';
-import {LinkCard} from '../components/LinkCard';
 
 export const DetailPage = (props) => {
   const {token} = useContext(AuthContext)
